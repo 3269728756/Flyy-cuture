@@ -1,0 +1,54 @@
+.header {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  color: rgba(0, 0, 0, 0.65);
+}
+.header .header-top {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  border-bottom: 1px solid #1da57a;
+  padding-right: 40px;
+}
+.header .header-top span {
+  margin: 0 20px;
+}
+.header .header-bottom {
+  height: 40px;
+  width: 100%;
+}
+.header .header-bottom .header-bottom-left h1 {
+  width: 25%;
+  position: relative;
+  font-size: 20px;
+  line-height: 40px;
+  float: left;
+  color: rgba(0, 0, 0, 0.65);
+  text-align: center;
+}
+.header .header-bottom .header-bottom-left h1::after {
+  position: absolute;
+  top: 90%;
+  right: 50%;
+  transform: translateX(50%);
+  content: "";
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid white;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+.header .header-bottom .header-bottom-right {
+  text-align: right;
+  padding-right: 40px;
+  line-height: 40px;
+}
+.header .header-bottom .header-bottom-right img {
+  width: 20px;
+  margin: 0 0 0 20px;
+}
+.header .header-bottom .header-bottom-right span {
+  padding: 0 5px;
+  font-weight: bolder;
+}

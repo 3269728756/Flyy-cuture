@@ -1,0 +1,33 @@
+.title {
+  width: 100%;
+}
+.title span:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+.title span:last-child {
+  float: right;
+}
+.title::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+.p-img {
+  width: 200px;
+  height: 150px;
+}
+.picture {
+  width: 200px;
+  height: 150px;
+  border: 1px solid #002140;
+  margin-right: 10px;
+}
+.ant-upload-list-picture-card .ant-upload-list-item-thumbnail img{
+  width:150%;
+  height:100%;
+  object-fit: cover;
+ 
+  
+
+}

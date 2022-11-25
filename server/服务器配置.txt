@@ -1,0 +1,18 @@
+利用Nginx配置代理服务器，加入以下代码即可
+
+
+
+# 所有请求(不与下面匹配的请求)都转发给前台应用
+        location / {
+	    proxy_pass  http://localhost:3000;
+	}
+    
+	# 所有以/api开头的请求都转发给后台服务器应用
+	location ~ /api/ {
+	    proxy_pass  http://localhost:5000;
+	}
+  # Web服务API 代理
+        location /_AMapService/ {
+            set $args "$args&jscode=您的安全密钥";
+            proxy_pass https://restapi.amap.com/;
+        }
